@@ -33,9 +33,6 @@ Indicando que não a cenários e steps criados.
 
 Pronto, agora é só desenvolver os cenários no formato BDD nos arquivos .features
 
-O exercício 1 foi tagueado com @exercicio1 e o exercício 2 com @exercicio2 e ambos com @projeto. 
-Para executar o projeto inteiro, basta rodar cucumber e a tag que deseja rodar. ; )
-
 O exercício 2 foi bem complicado, comecei usando o Postman, que acho mais fácil, consegui chegar até a 4 chamada da API.
 Porém, não consegui passar tudo para a automação pro httParty.
 Estou commitando o que fiz, porém, infelizmente, não funcionou.
