@@ -1,0 +1,177 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API Walmart",
+		"_postman_id": "d89f338c-c53c-8948-5c15-8178f300c58b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get 1",
+			"request": {
+				"url": "https://test-eng-api.herokuapp.com/claim_challenge",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get 2",
+			"request": {
+				"url": "https://test-eng-api.herokuapp.com/claim_challenge",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get 3",
+			"request": {
+				"url": "https://test-eng-api.herokuapp.com/first_step",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "token",
+						"value": "xyx",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"token\": \"xyx\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get 4",
+			"request": {
+				"url": {
+					"raw": "https://test-eng-api.herokuapp.com/second_step?firstKey=redKey",
+					"protocol": "https",
+					"host": [
+						"test-eng-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"second_step"
+					],
+					"query": [
+						{
+							"key": "firstKey",
+							"value": "redKey",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "token",
+						"value": "xyx",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get 5 com erro",
+			"request": {
+				"url": {
+					"raw": "https://test-eng-api.herokuapp.com/last_step?firstKey=redKey",
+					"protocol": "https",
+					"host": [
+						"test-eng-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"last_step"
+					],
+					"query": [
+						{
+							"key": "firstKey",
+							"value": "redKey",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"userId\": 200,\n        \"id\": 201,\n        \"title\": \"Testes Te\",\n        \"body\": \"Testes Te\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get 6",
+			"request": {
+				"url": "https://test-eng-api.herokuapp.com/last_step",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"true\",\r\n\t\"value\": \"true\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

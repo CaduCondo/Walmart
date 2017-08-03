@@ -1,0 +1,227 @@
+{
+	"id": "d89f338c-c53c-8948-5c15-8178f300c58b",
+	"name": "Treinamentos",
+	"description": "",
+	"order": [
+		"1aaeb13e-665d-08cc-53c7-7f026e74452a",
+		"5d3acd87-b6e7-abfb-0a50-f12c1a80d57e",
+		"05e921a6-b303-932e-8dfc-be920036e9e0",
+		"ceae8f2e-20ea-6d37-ee56-fdc688543560",
+		"2f56a750-2c23-ad18-4e80-85c237b2a101",
+		"6d9b7c43-e03b-8db5-a763-28bc27b86bb6"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1501272971855,
+	"owner": "870870",
+	"public": false,
+	"requests": [
+		{
+			"id": "05e921a6-b303-932e-8dfc-be920036e9e0",
+			"headers": "Content-Type: application/json\ntoken: xyx\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "xyx",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://test-eng-api.herokuapp.com/first_step",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501624610795,
+			"name": "get 3",
+			"description": "",
+			"collectionId": "d89f338c-c53c-8948-5c15-8178f300c58b",
+			"responses": [],
+			"rawModeData": "{\r\n  \"token\": \"xyx\"\r\n}"
+		},
+		{
+			"id": "1aaeb13e-665d-08cc-53c7-7f026e74452a",
+			"headers": "",
+			"headerData": [],
+			"url": "https://test-eng-api.herokuapp.com/claim_challenge",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d89f338c-c53c-8948-5c15-8178f300c58b",
+			"data": null,
+			"dataMode": "params",
+			"name": "get 1",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1501608266480,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "2f56a750-2c23-ad18-4e80-85c237b2a101",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://test-eng-api.herokuapp.com/last_step?firstKey=redKey",
+			"queryParams": [
+				{
+					"key": "firstKey",
+					"value": "redKey",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501624865475,
+			"name": "get 5 com erro",
+			"description": "",
+			"collectionId": "d89f338c-c53c-8948-5c15-8178f300c58b",
+			"responses": [],
+			"rawModeData": "    {\n        \"userId\": 200,\n        \"id\": 201,\n        \"title\": \"Testes Te\",\n        \"body\": \"Testes Te\"\n    }"
+		},
+		{
+			"id": "5d3acd87-b6e7-abfb-0a50-f12c1a80d57e",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://test-eng-api.herokuapp.com/claim_challenge",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501622284704,
+			"name": "get 2",
+			"description": "",
+			"collectionId": "d89f338c-c53c-8948-5c15-8178f300c58b",
+			"responses": []
+		},
+		{
+			"id": "6d9b7c43-e03b-8db5-a763-28bc27b86bb6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "https://test-eng-api.herokuapp.com/last_step",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501625290467,
+			"name": "get 6",
+			"description": "",
+			"collectionId": "d89f338c-c53c-8948-5c15-8178f300c58b",
+			"responses": [],
+			"rawModeData": "{\r\n\t\"name\": \"true\",\r\n\t\"value\": \"true\"\r\n}"
+		},
+		{
+			"id": "ceae8f2e-20ea-6d37-ee56-fdc688543560",
+			"headers": "Content-Type: application/json\ntoken: xyx\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "xyx",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://test-eng-api.herokuapp.com/second_step?firstKey=redKey",
+			"queryParams": [
+				{
+					"key": "firstKey",
+					"value": "redKey",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501624631293,
+			"name": "get 4",
+			"description": "",
+			"collectionId": "d89f338c-c53c-8948-5c15-8178f300c58b",
+			"responses": []
+		}
+	]
+}
