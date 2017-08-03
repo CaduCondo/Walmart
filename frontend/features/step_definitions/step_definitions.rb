@@ -10,8 +10,8 @@ Então(/^eu gravo os dados de email gerado$/) do
 end
 
 Dado(/^Dado que eu esteja na home de recuperação de senha$/) do
-  @page = ForgotPage.new 
-  @page.load    
+  @page = ForgotPage.new
+  @page.load
 end
 
 Quando(/^eu informar um email válido$/) do
@@ -20,29 +20,29 @@ Quando(/^eu informar um email válido$/) do
 end
 
 Quando(/^clicar no botão Recuperar Senha$/) do
-  @reset.enviar.click  
+  @reset.enviar.click
 end
 
 Então(/^o sistema faz o envio de uma nova senha para o email informado$/) do
-  expect(page).to have_content "Your e-mail's been sent!"  
+  expect(page).to have_content "Your e-mail's been sent!"
 end
 
 Dado(/^que eu esteja na tela de email temporário$/) do
-  @temp = TempPage.new 
-  @temp.load  
+  @temp = TempPage.new
+  @temp.load
 end
 
 Quando(/^clicar no botão para Atualizar as informações$/) do
   @mail = MailPage.new
   sleep 25
-  @mail.atualiza.click  
+  @mail.atualiza.click
 end
 
 Quando(/^clicar no link do email recebido$/) do
-  @mail.seleciona.click   
+  @mail.seleciona.click
 end
 
 Então(/^eu valido o email de senha$/) do
   sleep 2
-  expect(page).to have_content "no-reply@the-internet.herokuapp.com"  
+  expect(page).to have_content "no-reply@the-internet.herokuapp.com"
 end
