@@ -1,4 +1,4 @@
-Dado(/^que eu acesse o site do TempMail$/) do
+Dado(/^que eu acesse o site do TempMail$/) 
   page.driver.browser.manage.window.maximize
   @temp = TempPage.new
   @temp.load
