@@ -4,7 +4,7 @@ end
 
 class MailPage < SitePrism::Page
   element :atualiza, "span[class='icon-control control-refresh']"
-  element :seleciona,  ".glyphicon-chevron-right"
+  element :seleciona, ".glyphicon-chevron-right"
 end
 
 class ForgotPage < SitePrism::Page
@@ -13,5 +13,5 @@ end
 
 class ResetPage < SitePrism::Page
   element :email, "input[id='email']"
-  element :enviar,   "button[type='submit']"
+  element :enviar, "button[type='submit']"
 end
