@@ -1,5 +1,5 @@
 #language: pt
-  
+
 Funcionalidade: Solicitar Reset de Senha
     Eu como usuário, quero solicitar o envio de uma nova 
     Senha para o meu email temporário, em seguida devo realizar a consulta
