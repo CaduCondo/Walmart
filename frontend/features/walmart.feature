@@ -8,14 +8,12 @@ Funcionalidade: Solicitar Reset de Senha
     Dado que eu acesse o site do TempMail
     Então eu gravo os dados de email gerado
     
-    @exercicio1 @projeto 
   Cenario: Reenvio de Senha
     Dado Dado que eu esteja na home de recuperação de senha
     Quando eu informar um email válido
      E clicar no botão Recuperar Senha
     Então o sistema faz o envio de uma nova senha para o email informado
-
-    @exercicio1 @projeto 
+    
   Cenario: Verificar Caixa de Email
     Dado que eu esteja na tela de email temporário
     Quando clicar no botão para Atualizar as informações
