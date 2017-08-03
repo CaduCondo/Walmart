@@ -1,5 +1,4 @@
 Quando(/^faço um GET no serviço "([^"]*)"$/) do |service|
-#    @api = HTTParty.get('https://test-eng-api.herokuapp.com' + service)
     @api = HTTParty.get('https://test-eng-api.herokuapp.com#{service}/#{@user.id}')  
 end
 
@@ -61,5 +60,3 @@ end
 Quando(/^faço um POST na última rota "([^"]*)"$/) do |service|
     @api = HTTParty.post('https://test-eng-api.herokuapp.com' + service)  
 end
-
-
